@@ -1,14 +1,19 @@
+import java.util.Scanner;
 public class JavaExample {
+
   public static void main(String[] args) {
-    // two integer variables with values
-    // and a variable "sum" to store the result
-    int num1 = 5, num2 = 15,sum;
 
-    //calculating the sum of num1 and num2 and
-    //storing the result in the variable sum
-    sum = num1+num2;
+    double num1, num2, sum;
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Enter First Number: ");
+    num1 = sc.nextDouble();
 
-    //printing the result
+    System.out.print("Enter Second Number: ");
+    num2 = sc.nextDouble();
+
+    sc.close();
+    sum = num1 + num2;
     System.out.println("Sum of "+num1+" and "+num2+" is: "+sum);
   }
 }
+
